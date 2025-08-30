@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start-dev-server",
+      "type": "npm",
+      "script": "dev",
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "owner": "vite",
+          // 任意一行输出视为开始（首次 vite banner）
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "vite v",
+            // 放宽匹配，只要出现端口即可；避免颜色代码 & 前缀影响
+            "endsPattern": "localhost:5173/"
+          },
+          // 提供一个最小的匹配行，避免 VS Code 报“未定义 pattern”
+          "pattern": {
+            "regexp": "^ERROR\\s+(.*)$",
+            "message": 1
+          }
+        }
+      ],
+      "detail": "npm run dev (vite)"
+    }
+  ]
+}

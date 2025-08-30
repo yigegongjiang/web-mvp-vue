@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run vite",
+      "runtimeExecutable": "vite",
+      "cwd": "${workspaceFolder}",
+      "args": []
+    },
+    {
+      "name": "Launch Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/src",
+      "sourceMaps": true
+    },
+    {
+      "name": "Debug Vue (start + Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/src",
+      "preLaunchTask": "start-dev-server",
+      "sourceMaps": true
+    }
+  ]
+}
