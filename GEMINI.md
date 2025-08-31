@@ -17,16 +17,19 @@ This is a Vue.js 3 project bootstrapped with Vite. It uses TypeScript for type s
 The following commands are available to build, run, and test the project:
 
 - **Install dependencies:**
+
   ```sh
   bun install
   ```
 
 - **Compile and Hot-Reload for Development:**
+
   ```sh
   bun dev
   ```
 
 - **Type-Check, Compile and Minify for Production:**
+
   ```sh
   bun run build
   ```
@@ -43,8 +46,8 @@ The following commands are available to build, run, and test the project:
 - **Testing:** Unit tests are written with Vitest and are located in the `src/components/__tests__` directory.
 - **Code Style:** The project follows the standard Vue.js style guide.
 - **File Structure:**
-    - `src/assets`: Static assets like CSS and images.
-    - `src/components`: Reusable Vue components.
-    - `src/router`: Vue Router configuration.
-    - `src/stores`: Pinia store modules.
-    - `src/views`: Vue components that represent pages.
+  - `src/assets`: Static assets like CSS and images.
+  - `src/components`: Reusable Vue components.
+  - `src/router`: Vue Router configuration.
+  - `src/stores`: Pinia store modules.
+  - `src/views`: Vue components that represent pages.
